@@ -2,3 +2,4 @@ fastapi
 uvicorn
 scilit-learn
 pandas
+streamlit-lottie
