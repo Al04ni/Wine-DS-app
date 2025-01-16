@@ -17,8 +17,7 @@ st.set_page_config(
 # Create a function to make a prediction request to the FastAPI backend
 def predict_wine(features):
     response = requests.post(API_URL, json=features)
-    return response.js
-    on()
+    return response.json()
 
 # Load Lottie animation
 def load_lottieurl(url: str):
@@ -82,7 +81,7 @@ The Romans expanded viticulture across Europe, establishing vineyards that laid 
 st.video("https://youtu.be/7RS9Ntnq9tA?si=qTB9n_o5_Vk-CjZz")  # Replace with your video ID
 
 #The rest of the page
-with st.expander("Wine storing Tips!"):
+with st.expander("Wine storing Tips at Home!"):
         st.caption(f'''To store wine at home, keep bottles upright in a cool, 
             dark place with stable temperatures (50-55°F), moderate humidity (around 70%), and minimal vibration to preserve quality.''')
 
@@ -92,7 +91,7 @@ with diverse styles reflecting regional climates and traditions, making it an in
 
 #Defining the container for measurements
 with st.container(border=True):
-    st.subheader("Exploring Wine Features o_o")
+    st.subheader("Exploring Wine Features  o^o")
     st.markdown('''Various chemical features are analyzed to measure wine quality, including alcohol content, acidity levels, and phenolic compounds.
                 By evaluating these attributes, experts can assess the wine's balance, complexity, and overall quality profile, making informed 
                 recommendations for food pairings or aging potential.''')

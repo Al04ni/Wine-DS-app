@@ -1,5 +1,5 @@
 fastapi
 uvicorn
-scilit-learn
+scikit-learn
 pandas
 streamlit-lottie

@@ -39,4 +39,4 @@ def predict_wine(features: WineFeatures):
     ]]
     
     prediction = model.predict(input_data)
-    return {"prediction": int(prediction[0])}
+    return {"prediction": int(prediction)}
