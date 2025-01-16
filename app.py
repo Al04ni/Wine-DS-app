@@ -28,8 +28,11 @@ def load_lottieurl(url: str):
     return r.json()
 
 # Lottie animation URL
-lottie_url = "https://assets5.lottiefiles.com/packages/lf20_jcikwtux.json"
-lottie_animation = load_lottieurl(lottie_url)
+lottie_url1 = "https://lottie.host/0679177d-8c6f-4dd7-bb09-eca9ce4be158/gvJKiuBQiY.json"
+lottie_url2 = "https://lottie.host/5bd2a7d0-9c07-42b3-be1c-dc6b3a9c7a9c/JuM9iFizns.json"
+lottie_animation_1 = load_lottieurl(lottie_url1)
+lottie_animation_2 = load_lottieurl(lottie_url2)
+
 
 ###################################################################################################################
 ######################################SideBar######################################################################
@@ -40,7 +43,7 @@ with st.sidebar:
                 <span> About</span>''',
                 unsafe_allow_html=True)
     
-    st_lottie(lottie_animation, height=200, key="wine")
+    st_lottie(lottie_animation_1, height=200, key="wine")
     with st.expander("In Nutshell 💀"):
         st.caption(f'''We leveraged the machine learning technique(LogisticRegression) to predict the quality of the wine based on its different ingredients.
         Please note that it may hallucinate based on the data we used during training.''')
@@ -136,13 +139,16 @@ with st.container(border=True):
         result = predict_wine(features)
         st.success(f"Prediction: {result['prediction']}")
 
+    
+
 #Footer 
-st.markdown("# Note:")
+st.markdown("## Note:")
 st.markdown('''Moderate wine consumption can offer health benefits, 
             particularly for cardiovascular health. Research indicates 
             that light to moderate drinking, defined as one glass daily 
             for women and two for men, is linked to a 30-50% reduction in heart disease risk (Herszage & Ebeler, 2011).
 ''')
+st_lottie(lottie_animation_2, height=200, key="Cheers")
 
 st.markdown(
         """
@@ -152,6 +158,8 @@ st.markdown(
         """,
         unsafe_allow_html=True,
         )
+
+
 st.markdown(
         """
         <hr style="border: none; border-top: 1px solid #ccc; margin: 50px 0px 0px 15px;">
