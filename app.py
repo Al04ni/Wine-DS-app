@@ -37,12 +37,11 @@ lottie_animation_2 = load_lottieurl(lottie_url2)
 ######################################SideBar######################################################################
 ################################################################################################################
 with st.sidebar:
+    st_lottie(lottie_animation_1, height=200, key="wine") 
     st.markdown('''
                 <p style="text-align: center; font-size:30px">
                 <span> About</span>''',
                 unsafe_allow_html=True)
-    
-    st_lottie(lottie_animation_1, height=200, key="wine")
     with st.expander("In Nutshell 💀"):
         st.caption(f'''We leveraged the machine learning technique(LogisticRegression) to predict the quality of the wine based on its different ingredients.
         Please note that it may hallucinate based on the data we used during training.''')
