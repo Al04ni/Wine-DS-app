@@ -148,8 +148,7 @@ st.markdown('''Moderate wine consumption can offer health benefits,
             that light to moderate drinking, defined as one glass daily 
             for women and two for men, is linked to a 30-50% reduction in heart disease risk (Herszage & Ebeler, 2011).
 ''')
-st_lottie(lottie_animation_2, height=200, key="Cheers")
-
+st_lottie(lottie_animation_2, height=150, key="Cheers")
 st.markdown(
         """
         <p style="text-align: center; font-size: 16px; margin: 50px 0px">
