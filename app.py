@@ -4,7 +4,7 @@ import streamlit_lottie as st_lottie
 from streamlit_lottie import st_lottie
 
 # Define the URL of your FastAPI backend
-API_URL = "https://winequality-app.onrender.com"
+API_URL = "https://winequality-app.onrender.com/predict"
 
 #Page properties
 st.set_page_config(
